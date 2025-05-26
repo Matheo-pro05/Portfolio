@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio BTS SIO</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo-cgss-martinique-web.svg">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation fixe -->
     <nav class="navbar">
-        <ul>
+        <button class="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <ul class="nav-menu">
             <li><a href="#presentation">Présentation</a></li>
             <li><a href="#bts-sio">BTS SIO</a></li>
             <li><a href="#entreprise">CGSS</a></li>
-           
             <li><a href="#travaux">Travaux</a></li>
             <li><a href="#veille">Veille</a></li>
         </ul>
@@ -50,25 +58,17 @@
             <div class="bts-content">
                 <div class="bts-description">
                     <h2>Le BTS Services Informatiques aux Organisations</h2>
-                    <p>Le BTS SIO est une formation de niveau Bac+2 qui prépare aux métiers de l'informatique. L'option SISR est une formation qui qui se concentre sur l'installation, la configuration, la 
-                        sécurisation et la maintenance des réseaux et des équipements 
-                        informatiques d'une organisation. Grâce à cette spécialisation, je 
-                        développe des compétences dans la gestion des serveurs, la 
-                        virtualisation, la cybersécurité et l'administration des réseaux, afin 
-                        d'assurer le bon fonctionnement et la sécurité du système d'information 
-                        de l'entreprise. </p>
-                    <div class="options">
-                        
-                        <div class="option">
-                            <h3>SISR</h3>
-                            <p>Solutions d'Infrastructure, Systèmes et Réseaux</p>
-                            <ul>
-                                <li>Administration systèmes</li>
-                                <li>Réseaux</li>
-                                <li>Virtualisation</li>
-                                <li>Sécurité</li>
-                            </ul>
-                        </div>
+                    <p>Le BTS SIO est une formation de niveau Bac+2 qui prépare aux métiers de l'informatique. L'option SISR est une formation qui se concentre sur l'installation, la configuration, la sécurisation et la maintenance des réseaux et des équipements informatiques d'une organisation. Grâce à cette spécialisation, je développe des compétences dans la gestion des serveurs, la virtualisation, la cybersécurité et l'administration des réseaux, afin d'assurer le bon fonctionnement et la sécurité du système d'information de l'entreprise.</p>
+                    
+                    <div class="option">
+                        <h3>SISR</h3>
+                        <p>Solutions d'Infrastructure, Systèmes et Réseaux</p>
+                        <ul>
+                            <li>Administration systèmes</li>
+                            <li>Réseaux</li>
+                            <li>Virtualisation</li>
+                            <li>Sécurité</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="bts-skills">
@@ -105,10 +105,11 @@
                     <h2>Ma mission</h2>
                     <p>En tant qu'alternant au sein du service informatique de la CGSS, mes principales missions sont :</p>
                     <ul>
-                        <li></li>
+                        <li>Déploiment assistance de la nouvelle solution VPN</li>
                         <li>Support technique aux utilisateurs</li>
                         <li>Participation aux projets de modernisation des outils</li>
-                        <li>Documentation technique et fonctionnelle</li>
+                        <li>Mise en conformité du réseau du site de Californie</li>
+                        
                     </ul>
                 </div>
             </div>
@@ -122,18 +123,32 @@
         <div class="container">
             <h1>Travaux Réalisés</h1>
             <div class="travaux-content">
-                
-                
+                <div class="download-section">
+                    <h2>Tableau de synthèse</h2>
+                    <a href="https://drive.google.com/file/d/14rP8R5XdQjt9ip6EysNnkz7TP3MandlS/view?usp=sharing" target="_blank" class="download-button">
+                        <i class="fas fa-file-pdf"></i>
+                        Consulter le tableau de synthèse
+                    </a>
                 </div>
                 
-                    
-            </div>
-            <div class="download-section">
-                <h2>Documents complémentaires</h2>
-                <a href="assets/tableau-synthese-final.pdf" target="_blank" class="download-button">
-                    <i class="fas fa-file-pdf"></i>
-                    Consulter le tableau de synthèse
-                </a>
+                <div class="contextes-section">
+                    <h2>Contextes professionnels</h2>
+                    <div class="contextes-grid">
+                        <a href="https://drive.google.com/file/d/1-5DvJv06PkPKlQRl6QRrAXvJryBhVB2L/view?usp=sharing" target="_blank" class="context-button" id="flux-internet">
+                            <i class="fas fa-network-wired"></i>
+                            Séparation des flux internet
+                        </a>
+                        <a href="https://drive.google.com/file/d/1wJ0Ea3j_jMl3Vdm3GVGIJTiL2CifhUqr/view?usp=sharing" target="_blank" class="context-button" id="vpn">
+                            <i class="fas fa-shield-alt"></i>
+                            Contexte VPN
+                        </a>
+                        <a href="https://drive.google.com/file/d/1-drlft0v-KqhAax6HMNYLRZPZrPBFNUR/view?usp=sharing" target="_blank" class="context-button" id="migration">
+                            <i class="fas fa-server"></i>
+                            Contexte Migration de sous réseau
+                        </a>
+                    </div>
+                    <p class="drive-note">Les documents détaillés sont disponibles sur Google Drive</p>
+                </div>
             </div>
         </div>
     </section>
@@ -147,41 +162,12 @@
                     <h2>Ma Démarche de Veille</h2>
                     <p>Pour rester à jour dans le domaine du développement web et de la sécurité informatique, j'effectue une veille technologique régulière à travers différents canaux :</p>
                     <ul class="veille-sources">
-                        <li><i class="fas fa-rss"></i> Flux RSS de blogs techniques</li>
-                        <li><i class="fab fa-twitter"></i> Comptes Twitter spécialisés</li>
+                        
                         <li><i class="fab fa-youtube"></i> Chaînes YouTube techniques</li>
-                        <li><i class="fas fa-book"></i> Documentation officielle</li>
+                        <li><i class="fas fa-globe"></i> Sites spécialisés</li>
                     </ul>
                 </div>
-                <div class="veille-sujets">
-                    <h2>Sujets de Veille</h2>
-                    <div class="sujet">
-                        <h3>Sécurité Web</h3>
-                        <p>Suivi des dernières vulnérabilités et bonnes pratiques en matière de sécurité web.</p>
-                        <div class="sujet-tags">
-                            <span class="tag">OWASP</span>
-                            <span class="tag">Cybersécurité</span>
-                            <span class="tag">Authentification</span>
-                        </div>
-                    </div>
-                    <div class="sujet">
-                        <h3>Frameworks JavaScript</h3>
-                        <p>Veille sur l'évolution des frameworks front-end modernes et leurs nouveautés.</p>
-                        <div class="sujet-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Angular</span>
-                        </div>
-                    </div>
-                    <div class="sujet">
-                        <h3>DevOps</h3>
-                        <p>Surveillance des nouvelles pratiques et outils en matière d'intégration et déploiement continus.</p>
-                        <div class="sujet-tags">
-                            <span class="tag">Docker</span>
-                            <span class="tag">CI/CD</span>
-                            <span class="tag">Git</span>
-                        </div>
-                    </div>
+                
                 </div>
             </div>
         </div>
@@ -192,5 +178,25 @@
             <p>&copy; 2025 Matheo Piquioinne - Portfolio BTS SIO</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Fermer le menu quand on clique sur un lien
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html> 
